@@ -1,9 +1,7 @@
 ## Stellar Burgers — Selenium UI Automation Suite
 
 This repository contains a **UI automation test framework** for the *Stellar Burgers* web application.  
-It is designed as a **portfolio-ready, production-style automation project** showcasing best practices in Selenium, Java, and maintainable test architecture.
 
----
 
 ## Tech Stack
 
@@ -41,9 +39,6 @@ This suite validates core customer flows of the application:
 - Route guarding  
 - Header navigation  
 
-Tests are grouped into **smoke**, **regression**, and **cross-browser** layers.
-
----
 
 ## Project Structure
 ```bash
@@ -68,6 +63,11 @@ mvn clean test
 Run a specific test class:
 ``` bash
 mvn -Dtest=AuthenticationTests test
+```
+
+Run tests headless:
+``` bash
+mvn clean test -Dheadless=true
 ```
 
 Generate an Allure report locally:
